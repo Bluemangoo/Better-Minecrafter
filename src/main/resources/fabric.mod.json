@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "better-minecrafter",
+  "version": "${version}",
+  "name": "Better Minecrafter",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/better-minecrafter/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.bluemangoo.betterMinecrafter.BetterMinecrafter"
+    ]
+  },
+  "mixins": [
+    "better-minecrafter.mixins.json",
+    {
+      "config": "better-minecrafter.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "1.21.6-alpha.25.14.craftmine"
+  }
+}

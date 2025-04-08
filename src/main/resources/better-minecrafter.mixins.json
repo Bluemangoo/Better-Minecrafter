@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.bluemangoo.betterMinecrafter.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BlocksMixin",
+    "ItemsMixin",
+    "PrimaryLevelDataMixin",
+    "ServerGamePacketListenerImplMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "better-minecrafter-refmap.json"
+}
